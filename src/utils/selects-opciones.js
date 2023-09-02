@@ -243,76 +243,93 @@ export const OpcionesSelectMarcaUnidad = {
       valor: "",
     },
     {
-      texto: "Caterpillar",
-      valor: "Caterpillar",
+      texto: "Allmand",
+      valor: "Allmand",
     },
     {
-      texto: "HAAM",
-      valor: "HAAM",
+      texto: "Bobcat",
+      valor: "Bobcat",
+    },
+    {
+      texto: "Caterpillar",
+      valor: "Caterpillar",
     },
     {
       texto: "Case",
       valor: "Case",
     },
     {
-      texto: "Kenworth",
-      valor: "Kenworth",
-    },
-    {
-      texto: "International",
-      valor: "International",
-    },
-    {
-      texto: "Freightliner",
-      valor: "Freightliner",
-    },
-    {
-      texto: "Moffet",
-      valor: "Moffet",
-    },
-    {
-      texto: "Palfinger",
-      valor: "Palfinger",
-    },
-    {
-      texto: "Princeton",
-      valor: "Princeton",
-    },
-    {
-      texto: "Ford",
-      valor: "Ford",
-    },
-    {
-      texto: "Nissan",
-      valor: "Nissan",
-    },
-    {
       texto: "Chevrolet",
       valor: "Chevrolet",
     },
     {
-      texto: "Suzuki",
-      valor: "Suzuki",
+      texto: "Champions",
+      valor: "Champions",
     },
     {
-      texto: "Mazda",
-      valor: "Mazda",
+      texto: "Daemo",
+      valor: "Daemo",
     },
     {
-      texto: "Volkswagen",
-      valor: "Volkswagen",
-    },
-    {
-      texto: "Wirtgen",
-      valor: "Wirtgen",
+      texto: "Dina",
+      valor: "Dina",
     },
     {
       texto: "Dynapac",
       valor: "Dynapac",
     },
     {
-      texto: "Toyota",
-      valor: "Toyota",
+      texto: "Dodge",
+      valor: "Dodge",
+    },
+    {
+      texto: "Eaman",
+      valor: "Eaman",
+    },
+    {
+      texto: "Federtrack",
+      valor: "Federtrack",
+    },
+    {
+      texto: "Freightliner",
+      valor: "Freightliner",
+    },
+    {
+      texto: "Ford",
+      valor: "Ford",
+    },
+    {
+      texto: "Fruehauf",
+      valor: "Fruehauf",
+    },
+    {
+      texto: "Gallegos",
+      valor: "Gallegos",
+    },
+    {
+      texto: "Grecer",
+      valor: "Grecer",
+    },
+    
+    {
+      texto: "HAAM",
+      valor: "HAAM",
+    },
+    {
+      texto: "International",
+      valor: "International",
+    },
+    {
+      texto: "Ingresoll Rand",
+      valor: "Ingresoll Rand",
+    },
+    {
+      texto: "JunJin",
+      valor: "JunJin",
+    },
+    {
+      texto: "Kenworth",
+      valor: "Kenworth",
     },
     {
       texto: "Long King",
@@ -323,27 +340,86 @@ export const OpcionesSelectMarcaUnidad = {
       valor: "Mack",
     },
     {
-      texto: "Putzmeister",
-      valor: "Putzmeister",
+      texto: "Mazda",
+      valor: "Mazda",
     },
     {
       texto: "Mercedez-Benz",
       valor: "Mercedez-Benz",
     },
     {
+      texto: "Mega",
+      valor: "Mega",
+    },
+    {
+      texto: "Moffet",
+      valor: "Moffet",
+    },
+    {
+      texto: "MSB",
+      valor: "MSB",
+    },
+    {
+      texto: "Nissan",
+      valor: "Nissan",
+    },
+    {
+      texto: "Palfinger",
+      valor: "Palfinger",
+    },
+    {
+      texto: "Princeton",
+      valor: "Princeton",
+    },
+    {
+      texto: "PImhasa",
+      valor: "PImhasa",
+    },
+    {
+      texto: "Putzmeister",
+      valor: "Putzmeister",
+    },
+    
+    {
+      texto: "Rockblaster",
+      valor: "Rockblaster",
+    },
+    {
+      texto: "San rafael",
+      valor: "San rafael",
+    },
+    {
+      texto: "Seaman gunninson",
+      valor: "Seaman gunninson",
+    },
+    {
       texto: "Schwing",
       valor: "Schwing",
     },
     {
-      texto: "JunJin",
-      valor: "JunJin",
+      texto: "SHB",
+      valor: "SHB",
     },
     {
-      texto: "Bobcat",
-      valor: "Bobcat",
+      texto: "S/M",
+      valor: "S/M",
     },
-  
-    
+    {
+      texto: "Suzuki",
+      valor: "Suzuki",
+    },
+    {
+      texto: "Toyota",
+      valor: "Toyota",
+    },    
+    {
+      texto: "Volkswagen",
+      valor: "Volkswagen",
+    },
+    {
+      texto: "Wirtgen",
+      valor: "Wirtgen",
+    },
   ],
 };
 
@@ -458,89 +534,59 @@ export const OpcionesSelectEmpresaResponsableFinanzas = {
       valor: "",
     },
     {
-      texto: "Capital Humano",
-      valor: "Capital Humano",
+      texto: "Servicio Especializado Integral de León SA de CV",
+      valor: "Servicio Especializado Integral de León SA de CV",
     },
     {
-      texto: "Seilsa",
-      valor: "Seilsa",
+      texto: "Terracerías Puentes y Concretos SA de CV",
+      valor: "Terracerías Puentes y Concretos SA de CV",
     },
     {
-      texto: "Asfaltos",
-      valor: "Asfaltos",
+      texto: "Grupo Constructor Santa Ana, SA de CV",
+      valor: "Grupo Constructor Santa Ana, SA de CV",
     },
     {
-      texto: "Santa Ana",
-      valor: "Santa Ana",
+      texto: "Premezclados Concreco SA de CV",
+      valor: "Premezclados Concreco SA de CV",
+    },
+    
+    {
+      texto: "Industria del Block SA de CV",
+      valor: "Industria del Block SA de CV",
     },
     {
-      texto: "Patiña",
-      valor: "Patiña",
+      texto: "Estructuras Metálicas de altura SA de CV",
+      valor: "Estructuras Metálicas de altura SA de CV",
     },
     {
-      texto: "El diablo",
-      valor: "El diablo",
+      texto: "Ecomotriz del Bajío SA de CV",
+      valor: "Ecomotriz del Bajío SA de CV",
     },
     {
-      texto: "Concreco",
-      valor: "Concreco",
+      texto: "Arenas y Gravas del Bajío SA de CV",
+      valor: "Arenas y Gravas del Bajío SA de CV",
     },
     {
-      texto: "Concreco Planta 1",
-      valor: "Concreco Planta 1",
+      texto: "Consorcio Constructor ECO del Bajío SA de CV",
+      valor: "Consorcio Constructor ECO del Bajío SA de CV",
     },
     {
-      texto: "Concreco Planta 2",
-      valor: "Concreco Planta 2",
+      texto: "Bloquera de Vallarta SA de CV",
+      valor: "Bloquera de Vallarta SA de CV",
     },
     {
-      texto: "Concreco Planta 3",
-      valor: "Concreco Planta 3",
+      texto: "Bloquera del Bajío SA de CV ",
+      valor: "Bloquera del Bajío SA de CV ",
     },
     {
-      texto: "Concreco Planta 4",
-      valor: "Concreco Planta 4",
+      texto: "Tepetate",
+      valor: "Tepetate",
     },
     {
-      texto: "Concreco Planta 5",
-      valor: "Concreco Planta 5",
+      texto: "Banco de arena",
+      valor: "Banco de arena",
     },
-    {
-      texto: "Inblock",
-      valor: "Inblock",
-    },
-    {
-      texto: "Estructuras metálicas de altura",
-      valor: "Estructuras metálicas de altura",
-    },
-    {
-      texto: "Taller a gasolina",
-      valor: "Taller a gasolina",
-    },
-    {
-      texto: "Agrabasa",
-      valor: "Agrabasa",
-    },
-    {
-      texto: "Taller a diésel",
-      valor: "Taller a diésel",
-    },
-    {
-      texto: "Constructora ECO del bajío",
-      valor: "Constructora ECO del bajío",
-    },
-    {
-      texto: "Bloquera",
-      valor: "Bloquera",
-    },
-    {
-      texto: "Inblock Vallarta",
-      valor: "Inblock Vallarta",
-    },
-    {
-      texto: "Concreco Vallarta",
-      valor: "Concreco Vallarta",
-    },
+
     
   ],
 };
@@ -1499,49 +1545,57 @@ export const OpcionesEmpresa = {
       valor: "",
     },
     {
-      texto: "Seilsa",
-      valor: "Seilsa",
+      texto: "Servicio Especializado Integral de León SA de CV",
+      valor: "Servicio Especializado Integral de León SA de CV",
     },
     {
-      texto: "Asfaltos",
-      valor: "Asfaltos",
+      texto: "Terracerías Puentes y Concretos SA de CV",
+      valor: "Terracerías Puentes y Concretos SA de CV",
     },
     {
-      texto: "Trituradoras",
-      valor: "Trituradoras",
+      texto: "Grupo Constructor Santa Ana, SA de CV",
+      valor: "Grupo Constructor Santa Ana, SA de CV",
     },
     {
-      texto: "Concreco",
-      valor: "Concreco",
+      texto: "Premezclados Concreco SA de CV",
+      valor: "Premezclados Concreco SA de CV",
     },
     
     {
-      texto: "Inblock",
-      valor: "Inblock",
+      texto: "Industria del Block SA de CV",
+      valor: "Industria del Block SA de CV",
     },
     {
-      texto: "EMA",
-      valor: "EMA",
+      texto: "Estructuras Metálicas de altura SA de CV",
+      valor: "Estructuras Metálicas de altura SA de CV",
     },
     {
-      texto: "Ecomotriz",
-      valor: "Ecomotriz",
+      texto: "Ecomotriz del Bajío SA de CV",
+      valor: "Ecomotriz del Bajío SA de CV",
     },
     {
-      texto: "Agrabasa",
-      valor: "Agrabasa",
+      texto: "Arenas y Gravas del Bajío SA de CV",
+      valor: "Arenas y Gravas del Bajío SA de CV",
     },
     {
-      texto: "Constructora ECO",
-      valor: "Constructora ECO",
+      texto: "Consorcio Constructor ECO del Bajío SA de CV",
+      valor: "Consorcio Constructor ECO del Bajío SA de CV",
     },
     {
-      texto: "Bloquera Vallarta",
-      valor: "Bloquera Vallarta",
+      texto: "Bloquera de Vallarta SA de CV",
+      valor: "Bloquera de Vallarta SA de CV",
     },
     {
-      texto: "Bloquera Celaya",
-      valor: "Bloquera Celaya",
+      texto: "Bloquera del Bajío SA de CV ",
+      valor: "Bloquera del Bajío SA de CV ",
+    },
+    {
+      texto: "Tepetate",
+      valor: "Tepetate",
+    },
+    {
+      texto: "Banco de arena",
+      valor: "Banco de arena",
     },
 
     
@@ -1559,51 +1613,59 @@ export const OpcionesSelectEmpresaAltaFinanzas = {
       valor: "",
     },
     {
-      texto: "Seilsa",
-      valor: "Seilsa",
+      texto: "Servicio Especializado Integral de León SA de CV",
+      valor: "Servicio Especializado Integral de León SA de CV",
     },
     {
-      texto: "Asfaltos",
-      valor: "Asfaltos",
+      texto: "Terracerías Puentes y Concretos SA de CV",
+      valor: "Terracerías Puentes y Concretos SA de CV",
     },
     {
-      texto: "Trituradoras",
-      valor: "Trituradoras",
+      texto: "Grupo Constructor Santa Ana, SA de CV",
+      valor: "Grupo Constructor Santa Ana, SA de CV",
     },
     {
-      texto: "Concreco",
-      valor: "Concreco",
+      texto: "Premezclados Concreco SA de CV",
+      valor: "Premezclados Concreco SA de CV",
     },
     
     {
-      texto: "Inblock",
-      valor: "Inblock",
+      texto: "Industria del Block SA de CV",
+      valor: "Industria del Block SA de CV",
     },
     {
-      texto: "EMA",
-      valor: "EMA",
+      texto: "Estructuras Metálicas de altura SA de CV",
+      valor: "Estructuras Metálicas de altura SA de CV",
     },
     {
-      texto: "Ecomotriz",
-      valor: "Ecomotriz",
+      texto: "Ecomotriz del Bajío SA de CV",
+      valor: "Ecomotriz del Bajío SA de CV",
     },
     {
-      texto: "Agrabasa",
-      valor: "Agrabasa",
+      texto: "Arenas y Gravas del Bajío SA de CV",
+      valor: "Arenas y Gravas del Bajío SA de CV",
     },
     {
-      texto: "Constructora ECO",
-      valor: "Constructora ECO",
+      texto: "Consorcio Constructor ECO del Bajío SA de CV",
+      valor: "Consorcio Constructor ECO del Bajío SA de CV",
     },
     {
-      texto: "Bloquera Vallarta",
-      valor: "Bloquera Vallarta",
+      texto: "Bloquera de Vallarta SA de CV",
+      valor: "Bloquera de Vallarta SA de CV",
     },
     {
-      texto: "Bloquera Celaya",
-      valor: "Bloquera Celaya",
+      texto: "Bloquera del Bajío SA de CV ",
+      valor: "Bloquera del Bajío SA de CV ",
+    },
+    {
+      texto: "Tepetate",
+      valor: "Tepetate",
+    },
+    {
+      texto: "Banco de arena",
+      valor: "Banco de arena",
     },
 
     
-  ],
+  ],  
 };

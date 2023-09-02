@@ -344,7 +344,7 @@ export const DetalleUnidad = ({ detallesUnidad, urlId }) => {
               className="btn mb-2"
               style={{ backgroundColor: "#0d6efd", color: "white" }}
             >
-              Agregar Informacion Financiera de la Unidad
+              Agregar Información Financiera de la Unidad
             </Link>
 
           }

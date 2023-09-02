@@ -813,7 +813,7 @@ export const FormAgregarUnidad = ({formToEdit}) => {
             <div className="row mb-2">
               <div className="col-12 col-md-6">
                 <label htmlFor="nombre" className="form-label">
-                  Nombrec
+                  Nombre
 
                 </label>
                 <input

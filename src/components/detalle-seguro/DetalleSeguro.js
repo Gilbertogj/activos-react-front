@@ -44,16 +44,22 @@ export const DetalleSeguro = ({ detallesSeguro, urlId }) => {
                 <strong>Asegurada: </strong> {detallesSeguro.asegurada}
               </li>
               <li className="list-group-item">
-                <strong>Fecha vencimiento poliza:</strong> {detallesSeguro.fecha_vencimiento_poliza.slice(0, 10)}
+                <strong>Nombre de la aseguradora: </strong> {detallesSeguro.nombre_aseguradora}
               </li>
               <li className="list-group-item">
-                <strong>Número de poliza: </strong> {detallesSeguro.numero_poliza}
+                <strong>Fecha vencimiento póliza:</strong> {detallesSeguro.fecha_vencimiento_poliza.slice(0, 10)}
+              </li>
+              <li className="list-group-item">
+                <strong>Número de póliza: </strong> {detallesSeguro.numero_poliza}
               </li>
               <li className="list-group-item">
                 <strong>Certificado: </strong> {detallesSeguro.certificado}
               </li>
               <li className="list-group-item">
                 <strong>Tipo de cobertura: </strong> {detallesSeguro.tipo_cobertura}
+              </li>
+              <li className="list-group-item">
+                <strong>Tipo valor asegurado: </strong> {detallesSeguro.importe_valor_comercial}
               </li>
               <li className="list-group-item">
                 <strong>Valor asegurado: </strong> {detallesSeguro.valor_asegurado}
@@ -74,7 +80,26 @@ export const DetalleSeguro = ({ detallesSeguro, urlId }) => {
                 <strong>Remolque: </strong> {detallesSeguro.remolque}
               </li>
               <li className="list-group-item">
-                <strong>Valor poliza: </strong> {detallesSeguro.valor_poliza}
+                <strong>Valor póliza: </strong> {detallesSeguro.valor_poliza}
+              </li>
+
+              <li className="list-group-item">
+                <strong>Gps: </strong> {detallesSeguro.gps}
+              </li>
+              
+              <li className="list-group-item">
+                <strong>Nombre gps: </strong> {detallesSeguro.nombre_gps}
+              </li>
+
+              <li className="list-group-item">
+                <strong>Poliza:</strong>
+                {obraData.permiso ? (
+                  <a href={detallesSeguro.poliza} target="_blank" rel="noreferrer">
+                    Poliza
+                  </a>
+                ) : (
+                  " No hay archivo de poliza"
+                )}
               </li>
               
               

@@ -184,9 +184,9 @@ export const FormAgregarInformacionFinanciera = ({ unidadId, infoFinancieraData 
       <div className="row justify-content-center">
         <div className="col-12 col-sm-8">
           {infoFinancieraData ? (
-            <h3 className="text-center">Editar Informacion Financiera</h3>
+            <h3 className="text-center">Editar Información Financiera</h3>
           ) : (
-            <h3 className="text-center">Agregar Informacion Financiera</h3>
+            <h3 className="text-center">Agregar Información Financiera</h3>
           )}
 
           <form

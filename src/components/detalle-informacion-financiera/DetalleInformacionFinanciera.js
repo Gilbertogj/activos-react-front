@@ -19,7 +19,7 @@ export const DetalleInformacionFinanciera = ({ detallesInfoFinanciera, urlId }) 
               .
             </div>
             <div className="text-center">
-              <h2>Informacion Financiera </h2>
+              <h2>Información Financiera </h2>
             </div>
             <div>
               <div className="d-flex  flex-column align-items-center">
