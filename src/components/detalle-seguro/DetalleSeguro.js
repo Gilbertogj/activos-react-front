@@ -93,7 +93,7 @@ export const DetalleSeguro = ({ detallesSeguro, urlId }) => {
 
               <li className="list-group-item">
                 <strong>Poliza:</strong>
-                {obraData.permiso ? (
+                {detallesSeguro.permiso ? (
                   <a href={detallesSeguro.poliza} target="_blank" rel="noreferrer">
                     Poliza
                   </a>
