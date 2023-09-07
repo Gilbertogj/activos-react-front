@@ -134,6 +134,7 @@ export const FormAgregarUnidad = ({formToEdit}) => {
       <option value="Generadores">Generadores</option>
       <option value="Retroexcavadora con cargador">Retroexcavadora con cargador</option>
       <option value="Aditamentos">Aditamentos</option>
+      <option value="Motoconformadoras">Motoconformadoras</option>
       `;
           
       }else if (json.categoria === "Logística") {
@@ -148,6 +149,7 @@ export const FormAgregarUnidad = ({formToEdit}) => {
         <option value="Remolque">Remolque</option>
         <option value="Lowboy cama alta">Lowboy cama alta</option>
         <option value="Lowboy cama baja">Lowboy cama baja</option>
+        <option value="Pipas">Pipas</option>
         `;
         }else if (json.categoria === "Carga y manipulación") {
           document.querySelector("#familia").innerHTML = `
@@ -254,6 +256,14 @@ export const FormAgregarUnidad = ({formToEdit}) => {
             <option value=""></option>
             <option value="4 Ruedas">4 Ruedas</option>
             <option value="3 Ruedas">3 Ruedas</option>
+            `;
+          
+          }else if (json.familia === "Pipas") {
+            document.querySelector("#subfamilia").innerHTML = `
+            <option value=""></option>
+            <option value="Agua 10,000 lts.">Agua 10,000 lts.</option>
+            <option value="Agua 20,000 lts.">Agua 20,000 lts.</option>
+            <option value="Diésel 5,000 lts.">Diésel 5,000 lts.</option>
             `;
           
           }else{
@@ -400,6 +410,7 @@ export const FormAgregarUnidad = ({formToEdit}) => {
         <option value="Generadores">Generadores</option>
         <option value="Retroexcavadora con cargador">Retroexcavadora con cargador</option>
         <option value="Aditamentos">Aditamentos</option>
+        <option value="Motoconformadoras">Motoconformadoras</option>
         `;
             
         }else if (e.target.value === "Logística") {
@@ -414,6 +425,7 @@ export const FormAgregarUnidad = ({formToEdit}) => {
         <option value="Remolque">Remolque</option>
         <option value="Lowboy cama alta">Lowboy cama alta</option>
         <option value="Lowboy cama baja">Lowboy cama baja</option>
+        <option value="Pipas">Pipas</option>
         `;
         }else if (e.target.value === "Carga y manipulación") {
           document.querySelector("#familia").innerHTML = `
@@ -559,6 +571,20 @@ export const FormAgregarUnidad = ({formToEdit}) => {
         <option value=""></option>
         <option value="4 Ruedas">4 Ruedas</option>
         <option value="3 Ruedas">3 Ruedas</option>
+        `;
+        setForm({
+          ...form,
+          familia:familiaUnidadRef.current.value,
+          subfamilia:subFamiliaRef.current.value,
+        });
+  
+        subFamiliaRef.current.disabled = false;
+      }else if (e.target.value === "Pipas") {
+        document.querySelector("#subfamilia").innerHTML = `
+        <option value=""></option>
+        <option value="Agua 10,000 lts.">Agua 10,000 lts.</option>
+        <option value="Agua 20,000 lts.">Agua 20,000 lts.</option>
+        <option value="Diésel 5,000 lts.">Diésel 5,000 lts.</option>
         `;
         setForm({
           ...form,

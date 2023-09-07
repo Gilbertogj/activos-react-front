@@ -518,7 +518,7 @@ export const FormAgregarSeguro = ({ unidadId, infoSeguroData }) => {
                 <option value="Total">Total</option>
                 <option value="Total Responsabilidad civil ecológica">Total Responsabilidad civil ecológica</option>
                 <option value="Maquinaria para contratistas">Maquinaria para contratistas</option>
-                <option value="Amplio pickups">Amplio pickups</option>
+                
               </select>
              
             </div>

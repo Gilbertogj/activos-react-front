@@ -230,7 +230,7 @@ export const FormAgregarInformacionFinanciera = ({ unidadId, infoFinancieraData 
                   onChange={handleChange}
                   className="form-control"
                   autoComplete="off"
-                  required
+                  // required
                   min="1000"
                   max="4000"
                   minLength="4" 
