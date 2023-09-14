@@ -617,6 +617,14 @@ export const OpcionesSelectEmpresaResponsableFinanzas = {
       texto: "Concreco Vallarta",
       valor: "Concreco Vallarta",
     },
+    {
+      texto: "Tepetate",
+      valor: "Tepetate",
+    },
+    {
+      texto: "Arenas y Gravas, Lagos",
+      valor: "Arenas y Gravas, Lagos",
+    },
     
   ],
 };
@@ -1608,6 +1616,12 @@ export const OpcionesEmpresa = {
       valor: "Arenas y Gravas del Bajío SA de CV",
     },
     {
+      texto: "Arenas y Gravas del Bajío SA de CV CENTRAL",
+      valor: "Arenas y Gravas del Bajío SA de CV CENTRAL",
+    },
+
+    
+    {
       texto: "Consorcio Constructor ECO del Bajío SA de CV",
       valor: "Consorcio Constructor ECO del Bajío SA de CV",
     },
@@ -1619,15 +1633,7 @@ export const OpcionesEmpresa = {
       texto: "Bloquera del Bajío SA de CV ",
       valor: "Bloquera del Bajío SA de CV ",
     },
-    {
-      texto: "Tepetate",
-      valor: "Tepetate",
-    },
-    {
-      texto: "Banco de arena",
-      valor: "Banco de arena",
-    },
-
+    
     
   ],
 };
