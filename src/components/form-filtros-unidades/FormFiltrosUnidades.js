@@ -182,6 +182,7 @@ export const FormFiltrosUnidades = ({
         <option value="Retroexcavadora con cargador">Retroexcavadora con cargador</option>
         <option value="Aditamentos">Aditamentos</option>
         <option value="Motoconformadoras">Motoconformadoras</option>
+        <option value="Torres de iluminación">Torres de iluminación</option>
         `;
             
         }else if (e.target.value === "Logística") {
@@ -257,6 +258,7 @@ export const FormFiltrosUnidades = ({
       <option value="Rodillo vibratorio doble">Rodillo vibratorio doble</option>
       <option value="Rodillo neumático">Rodillo neumático</option>
       <option value="Mini compactador">Mini compactador</option>
+      <option value="Duo Pactor">Duo Pactor</option>
       `;
       setForm({
         ...form,
@@ -272,6 +274,7 @@ export const FormFiltrosUnidades = ({
       <option value=""></option>
       <option value="Martillos hidráulicos">Martillos hidráulicos</option>
       <option value="Barredoras">Barredoras</option>
+      <option value="Bote para retroexcavadora">Bote para retroexcavadora</option>
       `;
       setForm({
         ...form,
