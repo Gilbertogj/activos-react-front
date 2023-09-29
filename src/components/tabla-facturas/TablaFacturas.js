@@ -49,9 +49,9 @@ export const TablaFacturas = () => {
               <table className="table table-striped table-hover table-bordered text-center">
                 <thead>
                   <tr>
-                    <th>Factura</th>
-                    <th>Original</th>
-                    <th>Valor factura original</th>
+                    <th>Número de Factura</th>
+                    <th>Tipo de Factura</th>
+                    <th>Valor factura</th>
                     <th>Valor comercial</th>
                     <th>Archivo</th>
                   </tr>

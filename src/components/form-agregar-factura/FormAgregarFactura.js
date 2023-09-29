@@ -19,9 +19,14 @@ import {
 const initialState = {
     factura: "",
     original: "",
-    valor_comercial: "",
+    
     valor_factura_original: "",
     fecha_factura:"",
+    proovedor:"",
+    persona:"",
+    endoso:"",
+    beneficiario:"",
+    moneda:"",
  
     
 };
@@ -34,6 +39,7 @@ export const FormAgregarFactura = ({ infoFinancieraId, obraData }) => {
 
   const archivoRef = useRef();
   const originalRef = useRef();
+  const personaRef = useRef();
 
 
 
@@ -75,7 +81,11 @@ export const FormAgregarFactura = ({ infoFinancieraId, obraData }) => {
     formData.append("factura", form.factura);
     formData.append("descripcion", form.descripcion);
     formData.append("original", form.original);
-    formData.append("valor_comercial", form.valor_comercial);
+    formData.append("proovedor", form.proovedor);
+    formData.append("persona", form.persona);
+    formData.append("endoso", form.endoso);
+    formData.append("beneficiario", form.beneficiario);
+    formData.append("moneda", form.moneda);
     formData.append("valor_factura_original", form.valor_factura_original);
     formData.append("informacion_financiera", infoFinancieraId);
     formData.append("fecha_factura", form.fecha_factura);
@@ -211,7 +221,7 @@ export const FormAgregarFactura = ({ infoFinancieraId, obraData }) => {
             <div className="mb-2">
           
             <label htmlFor="factura" className="form-label">
-                  Factura
+                  Número de Factura
                 </label>
                 <input
                   type="text"
@@ -228,7 +238,7 @@ export const FormAgregarFactura = ({ infoFinancieraId, obraData }) => {
 
             <div className="mb-2">
               <label htmlFor="original" className="form-label">
-                Original
+                Tipo de Factura
               </label>
               <select
                 id="original"
@@ -240,8 +250,8 @@ export const FormAgregarFactura = ({ infoFinancieraId, obraData }) => {
                 required
               >
                 <option value=""></option>
-                <option value="Si">Sí</option>
-                <option value="No">No</option>
+                <option value="Si">Origen</option>
+                <option value="No">Subsecuente</option>
               </select>
               </div>
 
@@ -250,7 +260,7 @@ export const FormAgregarFactura = ({ infoFinancieraId, obraData }) => {
               <div className="mb-2">
           
             <label htmlFor="valor_factura_original" className="form-label">
-                  Valor factura original 
+                  Valor factura
                 </label>
                 <input
                   type="number"
@@ -264,23 +274,27 @@ export const FormAgregarFactura = ({ infoFinancieraId, obraData }) => {
                 />
             </div>
 
+            <div className="mb-2">
+              <label htmlFor="modena" className="form-label">
+                Moneda
+              </label>
+              <select
+                id="modena"
+                name="modena"
+                onChange={handleChange}
+                value={form.modena}
+                ref={originalRef}
+                className="form-select"
+                required
+              >
+                <option value=""></option>
+                <option value="Pesos">Pesos</option>
+                <option value="Dólares">Dólares</option>
+              </select>
+              </div>
 
-              <div className="mb-2">
-          
-            <label htmlFor="valor_comercial" className="form-label">
-                  Valor comercial
-                </label>
-                <input
-                  type="number"
-                  name="valor_comercial"
-                  id="valor_comercial"
-                  value={form.valor_comercial}
-                  onChange={handleChange}
-                  className="form-control"
-                  autoComplete="off"
-                //   required
-                />
-            </div>
+
+           
 
             <div className="mb-2">
           
@@ -298,6 +312,77 @@ export const FormAgregarFactura = ({ infoFinancieraId, obraData }) => {
               />
              
             </div>
+
+            <div className="mb-2">
+          
+          <label htmlFor="proovedor" className="form-label">
+                Proovedor
+              </label>
+              <input
+                type="number"
+                name="proovedor"
+                id="proovedor"
+                value={form.proovedor}
+                onChange={handleChange}
+                className="form-control"
+                autoComplete="off"
+              //   required
+              />
+          </div>
+
+          <div className="mb-2">
+              <label htmlFor="persona" className="form-label">
+                Persona
+              </label>
+              <select
+                id="persona"
+                name="persona"
+                onChange={handleChange}
+                value={form.persona}
+                ref={personaRef}
+                className="form-select"
+                // required
+              >
+                <option value=""></option>
+                <option value="Física">Física</option>
+                <option value="Moral">Moral</option>
+              </select>
+              </div>
+
+
+              <div className="mb-2">
+          
+          <label htmlFor="endoso" className="form-label">
+                Endoso
+              </label>
+              <input
+                type="number"
+                name="endoso"
+                id="endoso"
+                value={form.endoso}
+                onChange={handleChange}
+                className="form-control"
+                autoComplete="off"
+              //   required
+              />
+          </div>
+
+          <div className="mb-2">
+          
+          <label htmlFor="beneficiario" className="form-label">
+                Beneficiario
+              </label>
+              <input
+                type="number"
+                name="beneficiario"
+                id="beneficiario"
+                value={form.beneficiario}
+                onChange={handleChange}
+                className="form-control"
+                autoComplete="off"
+              //   required
+              />
+          </div>
 
             
 

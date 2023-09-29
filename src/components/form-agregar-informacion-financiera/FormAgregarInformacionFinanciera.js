@@ -20,6 +20,7 @@ const initialState = {
     empresa_alta: "",
     empresa_responsable: "",
     ano_compra: "",
+    valor_comercial:"",
     
 
   
@@ -65,6 +66,7 @@ export const FormAgregarInformacionFinanciera = ({ unidadId, infoFinancieraData 
     formData.append("empresa_alta", form.empresa_alta);
     formData.append("empresa_responsable", form.empresa_responsable);
     formData.append("ano_compra", form.ano_compra);
+    formData.append("valor_comercial", form.valor_comercial);
     formData.append("unidad", unidadId);
     // formData.append("usuario", 1);
 
@@ -245,6 +247,23 @@ export const FormAgregarInformacionFinanciera = ({ unidadId, infoFinancieraData 
           
          
        
+            </div>
+
+            <div className="mb-2">
+
+            <label htmlFor="valor_comercial" className="form-label">
+                  Valor comercial
+                </label>
+                <input
+                  type="number"
+                  name="valor_comercial"
+                  id="valor_comercial"
+                  value={form.valor_comercial}
+                  onChange={handleChange}
+                  className="form-control"
+                  autoComplete="off"
+                //   required
+                />
             </div>
 
            
