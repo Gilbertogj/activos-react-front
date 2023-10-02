@@ -52,7 +52,11 @@ export const TablaFacturas = () => {
                     <th>Número de Factura</th>
                     <th>Tipo de Factura</th>
                     <th>Valor factura</th>
-                    <th>Valor comercial</th>
+                    <th>Moneda</th>
+                    <th>Proovedor</th>
+                    <th>Beneficiario</th>
+                    <th>Endoso</th>
+                  
                     <th>Archivo</th>
                   </tr>
                 </thead>
@@ -73,14 +77,26 @@ export const TablaFacturas = () => {
                               {factura.factura}
                       </td>
                       <td>   
-                              {factura.original}
+                              {factura.original==="Si" ? "Origen" : factura.original==="No" ? "Subsecuente" : "N/A" }
                       </td>
+                     
                       <td>   
                               {"$"+factura.valor_factura_original}
                       </td>
                       <td>   
-                              {"$"+factura.valor_comercial }
+                              {factura.currency}
                       </td>
+                      <td>   
+                              {factura.proovedor ? factura.proovedor : "N/A"}
+                      </td>
+                      <td>   
+                              {factura.beneficiario ? factura.beneficiario : "N/A"}
+                      </td>
+                      <td>   
+                              {factura.endoso}
+                      </td>
+                  
+                  
 
                       
                       <td>

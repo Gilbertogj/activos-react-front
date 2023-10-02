@@ -26,7 +26,7 @@ const initialState = {
     persona:"",
     endoso:"",
     beneficiario:"",
-    moneda:"",
+    currency:"",
  
     
 };
@@ -40,6 +40,8 @@ export const FormAgregarFactura = ({ infoFinancieraId, obraData }) => {
   const archivoRef = useRef();
   const originalRef = useRef();
   const personaRef = useRef();
+  const endosoRef = useRef();
+  const beneficiarioRef = useRef();
 
 
 
@@ -66,6 +68,34 @@ export const FormAgregarFactura = ({ infoFinancieraId, obraData }) => {
   const handleChange = (e) => {
     const { name, value } = e.target;
 
+    if (e.target.name === "persona") {
+      if (e.target.value === "Fisica") {
+        setForm({
+          ...form,
+          persona: personaRef.current.value,
+          endoso: endosoRef.current.value,
+          benficiario: "",
+          
+        });
+
+        beneficiarioRef.current.disabled = true;
+        endosoRef.current.disabled= false;
+        
+      } else {
+        setForm({
+          ...form,
+          persona: personaRef.current.value,
+          endoso: "",
+          benficiario: beneficiarioRef.current.value ,
+        });
+
+        beneficiarioRef.current.disabled = false;
+        endosoRef.current.disabled= true;
+      } 
+
+      return;
+    }
+
     setForm({ ...form, [name]: value });
   };
 
@@ -85,7 +115,7 @@ export const FormAgregarFactura = ({ infoFinancieraId, obraData }) => {
     formData.append("persona", form.persona);
     formData.append("endoso", form.endoso);
     formData.append("beneficiario", form.beneficiario);
-    formData.append("moneda", form.moneda);
+    formData.append("currency", form.currency);
     formData.append("valor_factura_original", form.valor_factura_original);
     formData.append("informacion_financiera", infoFinancieraId);
     formData.append("fecha_factura", form.fecha_factura);
@@ -275,14 +305,14 @@ export const FormAgregarFactura = ({ infoFinancieraId, obraData }) => {
             </div>
 
             <div className="mb-2">
-              <label htmlFor="modena" className="form-label">
+              <label htmlFor="currency" className="form-label">
                 Moneda
               </label>
               <select
-                id="modena"
-                name="modena"
+                id="currency"
+                name="currency"
                 onChange={handleChange}
-                value={form.modena}
+                value={form.currency}
                 ref={originalRef}
                 className="form-select"
                 required
@@ -319,7 +349,7 @@ export const FormAgregarFactura = ({ infoFinancieraId, obraData }) => {
                 Proovedor
               </label>
               <input
-                type="number"
+                type="text"
                 name="proovedor"
                 id="proovedor"
                 value={form.proovedor}
@@ -344,7 +374,7 @@ export const FormAgregarFactura = ({ infoFinancieraId, obraData }) => {
                 // required
               >
                 <option value=""></option>
-                <option value="Física">Física</option>
+                <option value="Fisica">Física</option>
                 <option value="Moral">Moral</option>
               </select>
               </div>
@@ -361,6 +391,7 @@ export const FormAgregarFactura = ({ infoFinancieraId, obraData }) => {
                 id="endoso"
                 value={form.endoso}
                 onChange={handleChange}
+                ref={endosoRef}
                 className="form-control"
                 autoComplete="off"
               //   required
@@ -378,6 +409,7 @@ export const FormAgregarFactura = ({ infoFinancieraId, obraData }) => {
                 id="beneficiario"
                 value={form.beneficiario}
                 onChange={handleChange}
+                ref={beneficiarioRef}
                 className="form-control"
                 autoComplete="off"
               //   required

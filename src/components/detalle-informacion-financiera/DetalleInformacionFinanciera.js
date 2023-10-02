@@ -59,6 +59,9 @@ export const DetalleInformacionFinanciera = ({ detallesInfoFinanciera, urlId }) 
               <li className="list-group-item">
                 <strong>Año de compra: </strong> {detallesInfoFinanciera.ano_compra}
               </li>
+              <li className="list-group-item">
+                <strong>Valor comercial: </strong> {detallesInfoFinanciera.valor_comercial}
+              </li>
               
               {/* <li className="list-group-item">
                 <strong>Fecha de creación:</strong>{" "}
