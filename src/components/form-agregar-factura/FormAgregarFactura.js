@@ -386,7 +386,7 @@ export const FormAgregarFactura = ({ infoFinancieraId, obraData }) => {
                 Endoso
               </label>
               <input
-                type="number"
+                type="text"
                 name="endoso"
                 id="endoso"
                 value={form.endoso}
@@ -404,7 +404,7 @@ export const FormAgregarFactura = ({ infoFinancieraId, obraData }) => {
                 Beneficiario
               </label>
               <input
-                type="number"
+                type="text"
                 name="beneficiario"
                 id="beneficiario"
                 value={form.beneficiario}
