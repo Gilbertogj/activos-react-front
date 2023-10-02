@@ -87,7 +87,7 @@ export const TablaFacturas = () => {
                               {factura.currency}
                       </td>
                       <td>   
-                              {factura.proovedor ? factura.proovedor : "N/A"}
+                              {factura.supplier ? factura.supplier : "N/A"}
                       </td>
                       <td>   
                               {factura.beneficiario ? factura.beneficiario : "N/A"}

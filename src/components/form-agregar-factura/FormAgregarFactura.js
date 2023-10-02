@@ -22,7 +22,7 @@ const initialState = {
     
     valor_factura_original: "",
     fecha_factura:"",
-    proovedor:"",
+    supplier:"",
     persona:"",
     endoso:"",
     beneficiario:"",
@@ -111,7 +111,7 @@ export const FormAgregarFactura = ({ infoFinancieraId, obraData }) => {
     formData.append("factura", form.factura);
     formData.append("descripcion", form.descripcion);
     formData.append("original", form.original);
-    formData.append("proovedor", form.proovedor);
+    formData.append("supplier", form.supplier);
     formData.append("persona", form.persona);
     formData.append("endoso", form.endoso);
     formData.append("beneficiario", form.beneficiario);
@@ -345,14 +345,14 @@ export const FormAgregarFactura = ({ infoFinancieraId, obraData }) => {
 
             <div className="mb-2">
           
-          <label htmlFor="proovedor" className="form-label">
-                Proovedor
+          <label htmlFor="supplier" className="form-label">
+                Proveedor
               </label>
               <input
                 type="text"
-                name="proovedor"
-                id="proovedor"
-                value={form.proovedor}
+                name="supplier"
+                id="supplier"
+                value={form.supplier}
                 onChange={handleChange}
                 className="form-control"
                 autoComplete="off"
