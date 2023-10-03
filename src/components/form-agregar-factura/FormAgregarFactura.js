@@ -318,8 +318,8 @@ export const FormAgregarFactura = ({ infoFinancieraId, obraData }) => {
                 required
               >
                 <option value=""></option>
-                <option value="Pesos">Pesos</option>
-                <option value="Dólares">Dólares</option>
+                <option value="PESOS">Pesos</option>
+                <option value="DOLARES">Dólares</option>
               </select>
               </div>
 
