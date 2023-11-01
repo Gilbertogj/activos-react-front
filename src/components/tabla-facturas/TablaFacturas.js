@@ -55,7 +55,7 @@ export const TablaFacturas = () => {
                     <th>Moneda</th>
                     <th>Proovedor</th>
                     <th>Beneficiario</th>
-                    <th>Endoso</th>
+                    <th>Endoso o factura a:</th>
                   
                     <th>Archivo</th>
                   </tr>

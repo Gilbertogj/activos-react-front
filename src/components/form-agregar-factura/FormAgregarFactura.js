@@ -383,7 +383,7 @@ export const FormAgregarFactura = ({ infoFinancieraId, obraData }) => {
               <div className="mb-2">
           
           <label htmlFor="endoso" className="form-label">
-                Endoso
+              Endoso o factura a:
               </label>
               <input
                 type="text"
