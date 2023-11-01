@@ -688,7 +688,7 @@ export const FormAgregarSeguro = ({ unidadId, infoSeguroData }) => {
                 ref={gpsRef}
               >
                 <option></option>
-                <option value="Sí">Sí</option>
+                <option value="Si">Sí</option>
                 <option value="No">No</option>
               </select>
             </div>
