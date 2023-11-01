@@ -258,7 +258,7 @@ export const FormAgregarSeguro = ({ unidadId, infoSeguroData }) => {
     const formData = new FormData();
 
     if (polizaRef.current.files[0]) {
-      formData.append("ploiza", polizaRef.current.files[0]);
+      formData.append("poliza", polizaRef.current.files[0]);
     }
     formData.append("asegurada", form.asegurada);
     formData.append("fecha_vencimiento_poliza", form.fecha_vencimiento_poliza);
