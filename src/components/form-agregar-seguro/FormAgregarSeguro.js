@@ -157,8 +157,8 @@ export const FormAgregarSeguro = ({ unidadId, infoSeguroData }) => {
           valor_poliza: "",
           importe_valor_comercial: "",
           nombre_aseguradora : "",
-          gps : "",
-          nombre_gps : "",
+          gps : gpsRef.current.value,
+          nombre_gps : nombreGpsRef.current.value,
           
           
         });
@@ -175,8 +175,8 @@ export const FormAgregarSeguro = ({ unidadId, infoSeguroData }) => {
         servicioRef.current.disabled = true;
         valorPolizaRef.current.disabled = true;
         tipoValorRef.current.disabled = true;
-        gpsRef.current.disabled = true;
-        nombreGpsRef.current.disabled = true;
+        // gpsRef.current.disabled = true;
+        // nombreGpsRef.current.disabled = true;
        
         
       } else {
@@ -213,8 +213,8 @@ export const FormAgregarSeguro = ({ unidadId, infoSeguroData }) => {
         servicioRef.current.disabled = false;
         valorPolizaRef.current.disabled = false;
         tipoValorRef.current.disabled = false;
-        gpsRef.current.disabled = false;
-        nombreGpsRef.current.disabled = false;
+        // gpsRef.current.disabled = false;
+        // nombreGpsRef.current.disabled = false;
       } 
 
       return;
