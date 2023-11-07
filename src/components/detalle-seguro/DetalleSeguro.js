@@ -47,7 +47,7 @@ export const DetalleSeguro = ({ detallesSeguro, urlId }) => {
                 <strong>Nombre de la aseguradora: </strong> {detallesSeguro.nombre_aseguradora}
               </li>
               <li className="list-group-item">
-                <strong>Fecha vencimiento póliza:</strong> {detallesSeguro.fecha_vencimiento_poliza.slice(0, 10)}
+                <strong>Fecha vencimiento póliza:</strong> {detallesSeguro.fecha_vencimiento_poliza ? detallesSeguro.fecha_vencimiento_poliza.slice(0, 10) : ''}
               </li>
               <li className="list-group-item">
                 <strong>Número de póliza: </strong> {detallesSeguro.numero_poliza}
