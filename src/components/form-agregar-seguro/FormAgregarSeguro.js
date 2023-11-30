@@ -82,8 +82,8 @@ export const FormAgregarSeguro = ({ unidadId, infoSeguroData }) => {
         document.querySelector("#servicio").disabled = true;
         document.querySelector("#importe_valor_comercial").disabled = true;
         document.querySelector("#valor_poliza").disabled = true;
-        document.querySelector("#gps").disabled = true;
-        document.querySelector("#nombre_gps").disabled = true;
+        document.querySelector("#gps").disabled = false;
+        document.querySelector("#nombre_gps").disabled = false;
         // document.querySelector("#asegurada").value =
         // infoSeguroData.asegurada;
       } else {
