@@ -617,10 +617,10 @@ export const OpcionesSelectEmpresaResponsableFinanzas = {
       texto: "Concreco Vallarta",
       valor: "Concreco Vallarta",
     },
-    {
-      texto: "Tepetate",
-      valor: "Tepetate",
-    },
+    // {
+    //   texto: "Tepetate",
+    //   valor: "Tepetate",
+    // },
     {
       texto: "Arenas y Gravas, Lagos",
       valor: "Arenas y Gravas, Lagos",
