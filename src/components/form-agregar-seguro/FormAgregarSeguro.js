@@ -249,6 +249,23 @@ export const FormAgregarSeguro = ({ unidadId, infoSeguroData }) => {
       return;
     }
 
+    if (e.target.name === "valor_poliza") {
+      // Verificar si el valor es una cadena vacía y asignar null en ese caso
+      const newValue = value === '' ? null : parseFloat(value);
+  
+      // Actualizar el estado del formulario
+      setForm(prevForm => ({
+        ...prevForm,
+        [name]: newValue,
+      }));
+      
+      return; // Terminar la ejecución de la función después de actualizar el estado
+    }
+
+    
+
+
+
     setForm({ ...form, [name]: value });
   };
 

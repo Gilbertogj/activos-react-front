@@ -45,6 +45,7 @@ export const FormAgregarInformacionFinanciera = ({ unidadId, infoFinancieraData 
         empresa_alta: infoFinancieraData.empresa_alta,
         empresa_responsable: infoFinancieraData.empresa_responsable,
         ano_compra: infoFinancieraData.ano_compra,
+        valor_comercial: infoFinancieraData.valor_comercial,
         
       });
     }
@@ -242,11 +243,6 @@ export const FormAgregarInformacionFinanciera = ({ unidadId, infoFinancieraData 
                   }}
                 />
 
-                
-                
-          
-         
-       
             </div>
 
             <div className="mb-2">
@@ -263,6 +259,7 @@ export const FormAgregarInformacionFinanciera = ({ unidadId, infoFinancieraData 
                   className="form-control"
                   autoComplete="off"
                 //   required
+               
                 />
             </div>
 

@@ -1,5 +1,5 @@
 import React from "react";
-import MenuImagen from "../../assets/img/menu.JPG";
+import MenuImagen from "../../assets/img/pala_cargadora.jpg";
 // 
 
 export const MainSectionCover = ({ text }) => {
